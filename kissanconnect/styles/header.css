@@ -1,0 +1,52 @@
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.main-header .container { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.8rem; font-weight: 700; color: var(--secondary-color); text-decoration: none; }
+.logo span { color: var(--primary-color); }
+
+.main-nav ul { list-style: none; display: flex; align-items: center; gap: 1.5rem; }
+.main-nav a {
+    text-decoration: none; color: var(--secondary-color);
+    font-weight: 500; padding-bottom: 5px; border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+.main-nav a:hover, .main-nav a.active { color: var(--primary-color); border-bottom-color: var(--primary-color); }
+
+.cart-icon {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
+    text-decoration: none; color: var(--secondary-color);
+    margin-right: 0.5rem; padding: 0.5rem;
+    box-shadow: none; 
+    border-radius: 8px;
+}
+.cart-icon.shake { 
+    box-shadow: 0 0 0 3px rgba(42,157,143,0.15); 
+}
+.cart-icon i { display: none; } /* replaced by emoji */
+.cart-icon .cart-emoji { font-size: 22px; line-height: 1; }
+.cart-icon img { display: none; } /* replaced by icon */
+.cart-count {
+    position: absolute; top: -4px; right: -6px; background-color: var(--danger-color);
+    color: var(--white); border-radius: 50%; width: 20px; height: 20px;
+    display: flex; justify-content: center; align-items: center; font-size: 0.75rem; font-weight: bold; border: 1px solid var(--white);
+}
+
+.nav-buttons { display: flex; gap: 1rem; }
+.hamburger { display: none; font-size: 2rem; background: none; border: none; cursor: pointer; }
+
+.top-contact-bar {
+  background: #1b2a2f; color: #fff; font-size: 0.9rem;
+}
+.top-contact-bar .container { display:flex; gap:1rem; align-items:center; justify-content: flex-end; padding: .4rem 1.5rem; }
+.top-contact-bar .contact-item { display:flex; align-items:center; gap:.4rem; opacity:.95; white-space: nowrap; }
+.top-contact-bar a { color:#e9f5f2; text-decoration:none; border-bottom:1px dotted transparent; }
+.top-contact-bar a:hover { border-bottom-color:#e9f5f2; }
+@media (max-width:768px){ .top-contact-bar .container{ flex-wrap:wrap; justify-content:center; } }

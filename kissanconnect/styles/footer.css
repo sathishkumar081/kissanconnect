@@ -1,0 +1,13 @@
+/* --- Footer --- */
+.main-footer { background: #10242a; color: #e8f1ee; margin-top: 2rem; }
+.footer-grid { display:grid; grid-template-columns: repeat(4,1fr); gap: 2rem; padding: 2rem 1.5rem; }
+.footer-col { min-width: 0; }
+.footer-h { font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: #e9c46a; margin-bottom: .75rem; }
+.footer-list, .footer-links { list-style:none; padding:0; margin:0; }
+.footer-list li, .footer-links li { margin: .4rem 0; line-height: 1.4; }
+.footer-list a, .footer-links a { color: #f5f9f7; text-decoration: none; border-bottom: 1px solid transparent; }
+.footer-list a:hover, .footer-links a:hover { color: #a7ffde; border-bottom-color: #a7ffde; }
+.footer-bottom { background:#0b1a1f; padding:.8rem 0; text-align:center; }
+.footer-bottom p { margin:0; color:#cfe5df; }
+@media (max-width: 992px){ .footer-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 640px){ .footer-grid { grid-template-columns: 1fr; } }
